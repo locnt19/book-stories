@@ -23,7 +23,7 @@
     "font-awesome": "^5.9.0",
     "mdi": "^3.7.95",
     "linearicons": "^1.0.1",
-    "slick": "*",
-    "metro": "^4.3.4"
+    "metro": "^4.3.4",
+    "slick-carousel": "slick-slide#^1.8.1"
   }
 }
