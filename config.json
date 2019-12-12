@@ -1,0 +1,15 @@
+{
+	"font": [
+		"bower_components/mdi/fonts/*",
+		"bower_components/font-awesome/webfonts/*"
+	],
+	"globalJs": [
+		"bower_components/jquery/dist/jquery.min.js",
+		"bower_components/metro/build/js/metro.min.js",
+		"bower_components/slick/dist/slick.min.js"
+	],
+	"globalCss": [
+		"src/components/configs/fonts.css",
+		"bower_components/metro/build/css/metro.min.css"
+	]
+}
