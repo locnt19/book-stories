@@ -3,8 +3,37 @@
 		display: flex
 		justify-content: space-between
 		align-items: center
-		overflow-x: auto
 		&-image
-			margin-left: 8px
-			margin-right: 8px
-			height: 150px
+			width: 100%
+		&-name
+			font-size: .8125rem
+			line-height: 1.3
+			display: -webkit-box
+			-webkit-line-clamp: 3
+			-webkit-box-orient: vertical
+			overflow: hidden
+			text-overflow: ellipsis
+			margin-bottom: 5px
+			margin-top: 10px
+			&:hover
+				color: #ffc107
+		&-viewdetail
+			color: #ffc107
+			font-size: .8125rem
+			&:hover
+				color: #ffc107
+		&-time
+			font-size: .6875rem
+			color: gray
+			display: block
+			margin-bottom: 5px
+			margin-top: 0
+	&_doitac
+		padding: 30px 0
+		display: flex
+		justify-content: space-between
+		align-items: center
+		border-top: 1px solid #e6e6e6
+		.dpct
+			display: flex
+			justify-content: center

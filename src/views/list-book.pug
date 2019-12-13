@@ -1,0 +1,16 @@
+extends _layout.pug
+
+block var
+	- var title = 'List sách'
+
+block main
+	.container
+		.row
+			.col-12
+				include ../components/layout/breadcrumb/index.pug
+			.col-12
+					.layout-title
+						h1 List-book
+						span (Có n sách)
+					include ../components/layout/list-book/index.pug
+					//- include ../components/slide/book/book.pug
