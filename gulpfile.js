@@ -29,7 +29,7 @@ gulp.task('clean', function () {
 gulp.task('copyFontsIcon', function () {
 	let config = JSON.parse(readFileSync('./config.json'));
 	return gulp.src(config.font)
-		.pipe(gulp.dest('./dist/fonts'));
+		.pipe(gulp.dest('./dist/webfonts'));
 })
 
 // Task copy web font
