@@ -7,6 +7,7 @@ $(document).ready(function () {
 	});
 	$('.slide_book').slick({
 		infinite: true,
-		slidesToShow: 5
+		slidesToShow: 5,
+		slidesToScroll: 2
 	});
 });
