@@ -43,14 +43,78 @@ $(document).ready(function () {
 		slidesToShow: 5,
 		slidesToScroll: 2,
 		nextArrow:'<div class="book-btnnext"><i class="mdi mdi-chevron-right"></i></div>',
-		prevArrow:'<div class="book-btnpre"><i class="mdi mdi-chevron-left"></i></div>'
+		prevArrow: '<div class="book-btnpre"><i class="mdi mdi-chevron-left"></i></div>',
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 5
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 4
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 430,
+				settings: {
+					slidesToShow: 1
+				}
+			},
+		]
 	});
 	$('.banner_doitac').slick({
 		infinite: true,
 		slidesToShow: 6,
 		slidesToScroll: 1,
 		nextArrow:false,
-		prevArrow:false
+		prevArrow: false,
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 5
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 4
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 430,
+				settings: {
+					slidesToShow: 1
+				}
+			},
+		]
 	});
 	$('.slide_header').slick({
 		lazyLoad: 'ondemand',
