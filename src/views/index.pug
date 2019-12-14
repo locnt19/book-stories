@@ -4,11 +4,12 @@ block var
 	- var title = 'Trang chủ'
 
 block main
+	.banner_header_wrapper
+		.container
+			include ../components/banner/header/header.pug
+			include ../components/slide/keyword/keyword.pug
 	.container
 		.row
-			.col-12
-				h1 slide keyword
-				include ../components/slide/keyword/keyword.pug
 			.col-12
 				.slide_wrapper
 					.slide_title
