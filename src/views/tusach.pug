@@ -4,13 +4,13 @@ block var
 	- var title = 'Tủ sách'
 
 block main
-	.container
-		.row
-			.col-12
-				include ../components/layout/breadcrumb/index.pug
-			.col-12
-					.layout-title
-						h1 tủ sách
-						span (Có n tủ sách)
-					include ../components/layout/tusach/index.pug
-					//- include ../components/slide/book/book.pug
+	.block_wrapper.bg-image(style="min-height: calc(100vh - 150px)")
+		.container
+			.row
+				.col-12
+					include ../components/layout/breadcrumb/index.pug
+				.col-12
+						.layout-title
+							h1 tủ sách
+							span (Có 10 tủ sách)
+						include ../components/layout/tusach/index.pug

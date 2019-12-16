@@ -34,7 +34,10 @@ gulp.task('copyFontsIcon', function () {
 
 // Task copy web font
 gulp.task('copyWebFont', function () {
-	return gulp.src('./src/assets/fonts/*')
+	return gulp.src([
+		'./src/assets/fonts/*',
+		'bower_components/mdi/fonts/*'
+	])
 		.pipe(gulp.dest('./dist/fonts'));
 })
 

@@ -1,6 +1,9 @@
 .banner
 	&_header
 		display: flex
+		@media screen and ( max-width: 575.98px )
+			margin-left: -16px
+			margin-right: -16px
 		&_wrapper
 			background: url(../img/background.jpg) center repeat
 		&-menu
@@ -77,9 +80,13 @@
 				flex: 0 0 100%
 				max-width: 100%
 	&_recommends
-		display: flex
-		justify-content: space-between
-		align-items: center
+		&-1,
+		&-2
+			background: #fff
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			align-items: center
 		&-image
 			width: 100%
 		&-name
@@ -93,12 +100,12 @@
 			margin-bottom: 5px
 			margin-top: 10px
 			&:hover
-				color: #ffc107
+				color: #F47123
 		&-viewdetail
-			color: #ffc107
+			color: #F47123
 			font-size: .8125rem
 			&:hover
-				color: #ffc107
+				color: #F47123
 		&-time
 			font-size: .6875rem
 			color: gray
@@ -107,10 +114,8 @@
 			margin-top: 0
 	&_doitac
 		padding: 30px 0
-		display: flex
-		justify-content: space-between
-		align-items: center
 		border-top: 1px solid #e6e6e6
 		.dpct
-			display: flex
-			justify-content: center
+			outline: none
+			img
+				margin: 0 auto

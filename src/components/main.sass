@@ -11,13 +11,13 @@ body
 	color: #666
 	font-size: 16px
 	font-weight: 400
-	a
-		color: inherit
-		cusor: pointer
-		font-size: inherit
-		outline: none
-		&:hover
-			text-decoration: none
+a
+	color: inherit
+	cusor: pointer
+	font-size: inherit
+	outline: none
+	&:hover
+		text-decoration: none
 .container
 	padding-left: 16px
 	padding-right: 16px
@@ -28,6 +28,20 @@ body
 	padding: 8px
 ul
 	list-style: none
+.divider
+	display: block
+	height: 1px
+	width: 100%
+	background: #ddd
+	margin: 4px 0
+.rating
+	flex-wrap: wrap
+	.stars
+		margin-right: 10px
+	.result
+		margin-left: 0
+.bg-image
+	background: url(../img/background.jpg) center repeat
 @import slide/slide.sass
 @import banner/banner
 @import layout/layout.sass

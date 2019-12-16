@@ -1,26 +1,35 @@
 ul.cate-tusach
 	margin: 0 -5px
-	display: -webkit-box
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flexbox
 	display: flex
 	flex-wrap: wrap
 	li.cate-tusach-item
-		padding: 5px;
-		width: calc(100% / 10);
-		margin-bottom: 10px;
+		padding: 8px
+		flex: 0 0 10%
+		max-width: 10%
+		@media screen and ( max-width: 1199.98px )
+			flex: 0 0 calc(100% / 7)
+			max-width: calc(100% / 7)
+		@media screen and ( max-width: 991.98px )
+			flex: 0 0 calc(100% / 5)
+			max-width: calc(100% / 5)
+		@media screen and ( max-width: 767.98px )
+			flex: 0 0 calc(100% / 3)
+			max-width: calc(100% / 3)
+		@media screen and ( max-width: 575.98px )
+			flex: 0 0 calc(100% / 2)
+			max-width: calc(100% / 2)
+			
 		a
 			display: block
 			border: 1px solid #d9d9d9
-			border-radius: 4px;
-			background: #fff;
+			border-radius: 4px
+			background: #fff
 			text-align: center
 			padding: 10px
 			&:hover
-				color: #f5a623
-				border-color: #f5a623
-				box-shadow: 0 0 7px rgba(245,166,35,.5)
+				color: #F47123
+				border-color: #F47123
+				box-shadow: 0 0 7px rgba(#F47123,.5)
 			img
 				height: 80px
 			p
@@ -33,7 +42,3 @@ ul.cate-tusach
 				overflow: hidden
 				text-overflow: ellipsis
 				min-height: 28px
-@media (max-width: 767.98px)
-	li.cate-tusach-item
-		width: 25%!important
-		margin-bottom: 10px

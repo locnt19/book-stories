@@ -1,0 +1,36 @@
+.layout
+	&_detail_book
+		width: 100%
+		margin-left: 16px
+		@media screen and ( max-width: 767.98px )
+			margin-top: 24px
+			margin-left: 0
+		&-wrapper
+			background: url(../img/background.jpg) center repeat
+		&-1
+			background: #fff
+			padding: 16px
+			display: flex
+			@media screen and ( max-width: 767.98px )
+				flex-direction: column
+		&-2
+			background: #fff
+			padding: 16px
+			padding-bottom: 32px
+			.tabs-list
+				li.active
+					border-top: 2px solid #f47123 !important
+		.detail_book
+			&-title
+				font-weight: 800
+				font-size: 28px
+				margin-bottom: 16px
+			&-info,
+				margin-top: 16px
+				a
+					&:hover
+						color: #f47123
+			&-action
+				margin-top: 32px
+				button
+					margin-right: 8px

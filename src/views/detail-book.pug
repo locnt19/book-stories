@@ -1,0 +1,44 @@
+extends _layout.pug
+
+block var
+	- var title = 'Chi tiết sách'
+
+block main
+	.layout_detail_book-wrapper.pb-8
+		.container
+			.row
+				.col-12
+					include ../components/layout/breadcrumb/index.pug
+				.layout_detail_book-1.col-12
+						include ../components/slide/detail_book/detail_book.pug
+						include ../components/layout/detail_book/detail_book.pug
+				.layout_detail_book-2.col-12
+					ul(data-role="tabs" data-expand="true")
+						li
+							a(href="#noi_dung_ngan") Nội dung ngắn
+						//- li
+						//- 	a(href="#danh_gia") Đánh giá
+					.detail_book-content#noi_dung_ngan
+						h3 Quốc Gia Tái Thiết
+						p Ngay khi các vấn đề của thế giới không thể trở nên tồi tệ hơn, cuốn Quốc Gia Tái Thiết cắt ngang sự ảm đạm như một tia nắng. Với cách kể chuyện gợi nhớ đến Michael Lewis và một bác sĩ phẫu thuật lành nghề, Tepperman đưa chúng ta đi tham quan các ngôi làng địa phương, các phòng nội các và văn phòng tổng thống, nơi một vài nhà lãnh đạo xuất sắc đã thực hiện những bước tiến thực sự để giải quyết vấn đề kinh tế và những thách thức chính trị khổng lồ. Nếu bạn quan tâm đến việc hiểu thế giới hoặc cải thiện nó, cuốn sách này là không thể bỏ qua.
+						p Adam Grant - Tác giả sách Originals
+						p Jonathan Tepperman là Trưởng ban Biên tập của văn phòng Bộ Ngoại giao. Sinh ra và lớn lên ở Canada, sau đó theo học tiếng Anh tại Đại học Yale và ngành luật tại Đại học Oxford và Đại học New York, Tepperman bắt đầu sự nghiệp báo chí ở nước ngoài. Là cựu biên tập viên quốc tế của tờ Newsweek, các bài viết của ông cũng thường xuất hiện trên các tờ báo lớn như The New York Times, The Wall Street Journal, The Washington Post, The Atlantic... và nhiều xuất bản phẩm khác. Hiện ông sống tại quận Brooklyn với gia đình mình.
+					.detail_book-user_rating#danh_gia
+	.block_wrapper.py-4
+		.container
+			.row
+				.col-12
+					.slide_wrapper
+						.slide_title
+							h1 sách mới tuyển chọn
+							a(href="#").btn-viewall Xem tất cả
+						include ../components/slide/book/book.pug
+	.block_wrapper.bg-image.py-4
+		.container
+			.row
+				.col-12
+					.slide_wrapper
+						.slide_title
+							h1 KHUYÊN ĐỌC
+							a(href="#").btn-viewall Xem tất cả
+						include ../components/banner/recommends/recommends-2.pug
