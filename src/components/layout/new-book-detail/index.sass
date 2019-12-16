@@ -1,0 +1,123 @@
+.new-book-detail
+	background: #fff
+	margin-bottom: 20px
+	.col-12
+		padding: 0
+	&-content
+		padding: 20px 20px 20px 28px
+		&-title
+			margin-bottom: 15px
+			h1
+				font-size: 1.5rem
+				line-height: 1.2
+				font-weight: 700
+				margin: 0
+			p
+				display: inline-block
+				vertical-align: middle
+				font-size: .75rem
+				color: rgba(0,0,0,.5)
+				margin: 0
+		&-main
+			margin-bottom: 20px
+		&-product
+			padding: 20px
+			border: 1px solid #e6e6e6
+			display: -webkit-box
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flexbox
+			display: flex
+			&-img
+				width: 130px
+				img
+					width: 100%
+			&-caption
+				width: calc(100% - 130px)
+				padding-left: 20px
+				h2
+					font-size: 1.5rem
+					color: #333
+					display: -webkit-box
+					-webkit-line-clamp: 2
+					-webkit-box-orient: vertical
+					overflow: hidden
+					text-overflow: ellipsis
+					margin: 0
+				a 
+					&:hover
+						color: #333
+				&-rating
+					display: -webkit-box
+					display: -webkit-flex
+					display: -moz-flex
+					display: -ms-flexbox
+					display: flex
+					align-items: center
+					align-content: center
+					font-size: .875rem
+					ul
+						display: -webkit-box
+						display: -webkit-flex
+						display: -moz-flex
+						display: -ms-flexbox
+						display: flex
+						align-items: center
+						align-content: center
+						margin: 0
+						margin-right: 10px
+						li
+							.fa
+								color: #ffc107
+					span 
+						color: #4caf50
+				&-price
+					margin-bottom: 15px
+					ul
+						margin: 0
+						li
+							display: -webkit-box
+							display: -webkit-flex
+							display: -moz-flex
+							display: -ms-flexbox
+							display: flex
+							align-items: flex-end
+							align-content: flex-end
+							font-size: .8125rem
+							height: 1.7rem
+							span.price-old
+								color: #999
+								margin-left: 10px
+							span.price-new
+								font-size: 1.75rem
+								font-weight: 700
+								color: red
+								line-height: 1
+								margin-left: 10px
+				.btn-muangay
+					display: inline-block
+					min-width: 225px
+					text-align: center
+					line-height: 40px
+					color: #fff
+					background: linear-gradient(#f5a623,#fd8205)
+					border-radius: 4px
+					font-size: .875rem
+					font-weight: 700
+					&:hover
+						box-shadow: 0 10px 20px -10px #fd8205
+						color: #fff
+@media (max-width: 767.98px)
+	.new-book-detail-content-product
+    padding: 15px 0
+    border: none
+    border-top: 1px solid #e6e6e6
+	.new-book-detail-content-product-img
+		width: 80px
+	.new-book-detail-content-product-caption
+		width: calc(100% - 80px)
+		padding-left: 10px
+		h2
+			font-size: 1rem
+		.new-book-detail-content-product-caption-rating
+			font-size: .8125rem

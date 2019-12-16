@@ -1,0 +1,13 @@
+extends _layout.pug
+
+block var
+	- var title = 'Điểm sách'
+
+block main
+	.banner_header_wrapper
+		.container
+			.row
+				.col-12
+					include ../components/layout/breadcrumb/index.pug
+				.col-12(style="padding-top:0;padding-bottom:0;")
+					include ../components/layout/new-book-detail/index.pug

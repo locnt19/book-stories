@@ -1,0 +1,150 @@
+.new-book-section
+	background: #e8e8e8
+.new-book-list
+	padding: 20px 20px 0
+	.col-12
+		padding: 0 10px
+	&-big
+		display: block
+		position: relative
+		margin-bottom: 20px
+		&-img
+			img
+				width: 100%
+		&-caption
+			background: rgba(0,0,0,.7)
+			position: absolute
+			right: 0
+			bottom: 0
+			left: 0
+			z-index: 5
+			padding: 10px 15px
+			h1
+				font-size: 1.25rem
+				font-weight: 700
+				line-height: 1.3
+				display: -webkit-box
+				-webkit-line-clamp: 2
+				-webkit-box-orient: vertical
+				overflow: hidden
+				text-overflow: ellipsis
+				color: #fff
+				margin: 0
+			h3
+				font-size: .8125rem
+				font-weight: 700
+				line-height: 1.3
+				display: -webkit-box
+				-webkit-line-clamp: 2
+				-webkit-box-orient: vertical
+				overflow: hidden
+				text-overflow: ellipsis
+				color: #fff
+				margin: 0
+			p
+				display: inline-block
+				vertical-align: middle
+				font-size: .81255rem
+				color: rgba(255,255,255,.5)
+				margin: 0
+.new-book-page
+	margin-bottom: 20px
+	background-color: #fff
+	.col-12
+		padding: 0
+	&-list
+		padding: 0 20px
+		&-item
+			display: -webkit-box
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flexbox
+			display: flex
+			padding: 20px 0
+			flex-wrap: wrap
+			&-img
+				display: block
+				width: 300px
+				img
+					width: 100%
+			&-caption
+				width: calc(100% - 300px)
+				padding-left: 20px
+				a
+					display: -webkit-box
+					-webkit-line-clamp: 2
+					-webkit-box-orient: vertical
+					overflow: hidden
+					text-overflow: ellipsis
+					margin: 0
+					font-size: 1.125rem
+					line-height: 1.3
+					font-weight: 700
+				p
+					display: inline-block
+					vertical-align: middle
+					font-size: .75rem
+					color: rgba(0,0,0,.5)
+					margin: 0
+				&-description
+					font-size: 16px
+					display: -webkit-box
+					-webkit-line-clamp: 3
+					-webkit-box-orient: vertical
+					overflow: hidden
+					text-overflow: ellipsis
+					margin: 10px 0
+			.xemthem
+				color: #f5a623
+				font-size: .8125rem
+				font-weight: normal
+				&::after
+					content: '\f105'
+					margin-left: 5px
+.most-read
+	border-left: 1px solid #f2f2f2
+	padding: 20px
+	height: 100%
+	&-title
+		font-size: 1.5rem
+		text-transform: uppercase
+		margin-bottom: 15px
+		color:#000
+	&-list
+		&-item
+			display: -webkit-box
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flexbox
+			display: flex
+			margin-bottom: 20px
+			&-img
+				flex: 1
+				img
+					width: 100%
+			&-caption
+				flex: 1.5
+				padding-left: 15px
+				h3
+					font-size: .875rem
+					font-weight: 700
+					line-height: 1.3
+					display: -webkit-box
+					-webkit-line-clamp: 2
+					-webkit-box-orient: vertical
+					overflow: hidden
+					text-overflow: ellipsis
+					color: #333
+					margin: 0
+				p
+					display: block
+					vertical-align: middle
+					font-size: .75rem
+					color: rgba(51,51,51,.5)
+					margin: 0
+@media (max-width: 767.98px)
+	.new-book-page-list-item-img
+		width: 100%
+	.new-book-page-list-item-caption
+		width: 100%
+		padding: 15px 0 0
