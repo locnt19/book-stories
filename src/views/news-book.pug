@@ -4,11 +4,11 @@ block var
 	- var title = 'Điểm sách'
 
 block main
-	.banner_header_wrapper
+	.block_wrapper.bg-image
 		.container
 			.row
 				.col-12
 					include ../components/layout/breadcrumb/index.pug
-				.col-12(style="padding-top:0;padding-bottom:0;")
+				.col-12.px-0
 					.new-book-section
 						include ../components/layout/new-book/index.pug

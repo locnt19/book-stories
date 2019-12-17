@@ -1,30 +1,58 @@
 ul.cate-list-book
 	margin: 0 -5px
-	display: -webkit-box
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flexbox
 	display: flex
 	flex-wrap: wrap
 	li.cate-list-book-item
-		padding: 5px;
-		width: calc(100% / 10);
-		margin-bottom: 10px;
+		padding: 8px
+		flex: 0 0 10%
+		max-width: 10%
+		@media screen and ( max-width: 1199.98px )
+			flex: 0 0 calc(100% / 7)
+			max-width: calc(100% / 7)
+		@media screen and ( max-width: 991.98px )
+			flex: 0 0 calc(100% / 5)
+			max-width: calc(100% / 5)
+		@media screen and ( max-width: 767.98px )
+			flex: 0 0 calc(100% / 3)
+			max-width: calc(100% / 3)
+		@media screen and ( max-width: 575.98px )
+			flex: 0 0 calc(100% / 2)
+			max-width: calc(100% / 2)
+		&.active
+			position: relative
+			color: #F47123
+			a
+				border-color: #F47123
+				box-shadow: 0 0 7px rgba(#F47123,.5)
+			&::before
+				z-index: 1
+				position: absolute
+				right: 14px
+				top: 14px
+				content: '\F5E0'
+				display: inline-block
+				font-family: 'Material Design Icons'
+				font-size: inherit
+				text-rendering: auto
+				line-height: 1
+				-webkit-font-smoothing: antialiased
+				-moz-osx-font-smoothing: grayscale
 		a
 			display: block
-			border: 1px solid #d9d9d9
-			border-radius: 4px;
-			background: #fff;
+			border: 1px solid #ddd
+			border-radius: 4px
+			background: #fff
 			text-align: center
 			padding: 10px
+			text-transform: uppercase
 			&:hover
 				color: #F47123
 				border-color: #F47123
-				box-shadow: 0 0 7px rgba(245,166,35,.5)
+				box-shadow: 0 0 7px rgba(#F47123,.5)
 			img
 				height: 80px
 			p
-				font-size: .75rem
+				font-size: 12px
 				line-height: 1.2
 				text-align: center
 				display: -webkit-box
@@ -32,14 +60,11 @@ ul.cate-list-book
 				-webkit-box-orient: vertical
 				overflow: hidden
 				text-overflow: ellipsis
-				min-height: 28px
+				height: 28px
+				max-height: 28px
 .list-book-header
 	min-height: 50px
 	background: #fff
-	display: -webkit-box
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flexbox
 	display: flex
 	flex-wrap: wrap
 	align-items: center
@@ -66,116 +91,65 @@ ul.cate-list-book
 		a+a
 			margin-left: 10px
 	.sort
-		display: -webkit-box
-		display: -webkit-flex
-		display: -moz-flex
-		display: -ms-flexbox
 		display: flex
+		flex-wrap: wrap
 		.group
-			display: -webkit-box
-			display: -webkit-flex
-			display: -moz-flex
-			display: -ms-flexbox
 			display: flex
 			align-items: center
 			align-content: center
+			margin-bottom: 8px
+			&:not(:last-child)
+				margin-right: 16px
 			label
-				font-size: .8125rem
-				margin-right: 10px
+				font-size: 13px
+				margin-right: 8px
 				margin-bottom: 0
 			select
 				min-width: 120px
-				font-size: .8125rem
+				font-size: 13px
 				color: #666
-				border: 1px solid #e6e6e6
-				border-radius: 3px
+				border: 1px solid #ddd
+				border-radius: 4px
 				padding: 0 10px
 				width: auto
 				height: auto
-		.group+.group
-			margin-left: 10px
-.list
-	&_book
-		&-item
-			border-radius: 4px
-			padding: 16px
-			padding-top: 24px
-			&:hover
-				.img-box
-					img
-						transform: translateY(-10px)
-			&_box
-				margin-left: 8px
-				margin-right: 8px
-				display: flex;
-				flex-wrap: wrap;
-			&--name
-				line-height: 1.25
-				margin-top: 16px
-				height: 40px
-				max-height: 40px
-				overflow: hidden
-				display: -webkit-box
-				text-overflow: ellipsis
-				-webkit-line-clamp: 2
-				-webkit-box-orient: vertical
-				font-size: .875rem
-			&--author
-				font-size: 80%
-				margin-top: 8px
-			&--rating_stars
-				li.on,
-				li.half:after
-					color: #F47123 !important
-			figcaption
-				&:hover
-					.list_book-item--name
-						color: #F47123
-					color: #666
-@media (min-width: 1200px)
-	.list_book
-		.list_book-item_box
-			.list_book-item.col-custom
-					flex: 0 0 20%
-					max-width: 20%
+.list_book
+	display: flex
+	flex-wrap: wrap
+	.slide_book-item
+		border: none
+		&_box
+			margin: 0
+			flex: 0 0 calc(100% / 5)
+			max-width: calc(100% / 5)
+			@media screen and ( max-width: 991.98px )
+				flex: 0 0 calc(100% / 4)
+				max-width: calc(100% / 4)
+			@media screen and ( max-width: 767.98px )
+				flex: 0 0 calc(100% / 3)
+				max-width: calc(100% / 3)
+			@media screen and ( max-width: 575.98px )
+				flex: 0 0 calc(100% / 2)
+				max-width: calc(100% / 2)
 @media (max-width: 1199.98px)
-	.list-book-header 
+	.list-book-header
 		.filter-tag
 			display: block
 			overflow: auto
 			white-space: nowrap
+			text-overflow: clip
 			flex: unset
+			padding-bottom: 8px
 			border-bottom: 1px solid #f2f2f2
 	.list-book-header 
 		.sort
-			flex-direction: unset
-			margin-top: 5px
-			.group
-				width: 50%
-				label
-					max-width: 25%
-					white-space: nowrap
-					width: auto
-				select
-					max-width: 65%
-					width: auto
-@media (max-width: 767.98px)
-	ul.cate-list-book
-		display: block
-		white-space: nowrap
-		overflow: auto
-		margin: 0 -20px
-		padding: 0 15px
-		li.cate-list-book-item
-				display: inline-block
-				vertical-align: top
-				width: 120px
-				white-space: normal
-	.list-book-header 
+			margin-top: 16px
+@media screen and ( max-width: 575.98px )
+	.list-book-header
 		.sort
 			width: 100%
+			flex-direction: column
 			.group
 				width: 100%
 				select
-					min-width: unset
-					flex: 1
+					flex: 1 0 0
